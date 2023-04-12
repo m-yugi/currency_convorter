@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Currency converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h4>hello world</h4> -->
+    <h1>Currency converter</h1>
+    <div id="main_body">
+      <div id="inputs">
+        <label for="text" id="amount_label">amount</label>
+        <input type="text" id="amount" class="input_areas" />
+        <label for="text" id="from_label">From</label>
+        <input type="text" id="from_curr" class="input_areas" />
+        <label for="text" id="to_label">To</label>
+        <input type="text" id="to_curr" class="input_areas" />
+      </div>
+      <div id="btn_results">
+        <div>
+          <p id="result" class="para_res"></p>
+          <p id="from_curr_rate" class="para_res"></p>
+          <p id="to_curr_rate" class="para_res"></p>
+        </div>
+        <input type="submit" value="convert" onclick="get_data()" id="btn" />
+      </div>
+    </div>
+  </body>
+</html>
